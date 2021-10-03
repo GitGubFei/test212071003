@@ -47,4 +47,26 @@ public class Student {
     public void setStu_phone(String stu_phone) {
         this.stu_phone = stu_phone;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "stu_id=" + stu_id +
+                ", stu_name='" + stu_name + '\'' +
+                ", stu_gender=" + stu_gender +
+                ", stu_age=" + stu_age +
+                ", stu_phone='" + stu_phone + '\'' +
+                '}';
+    }
+
+    public Student() {
+    }
+
+    public Student(int stu_id, String stu_name, char stu_gender, int stu_age, String stu_phone) {
+        this.stu_id = stu_id;
+        this.stu_name = stu_name;
+        this.stu_gender = stu_gender;
+        this.stu_age = stu_age;
+        this.stu_phone = stu_phone;
+    }
 }
